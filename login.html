@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="icon" href="images/signup.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      body {
+        width: 100%;
+        background-color: rgb(251,255,240);
+        margin-top: 50px;
+      }
+      #container {
+        width: 521px;
+        margin: auto;
+        background-color: white;
+        padding: 40px;
+        box-shadow: 5px 5px 10px 10px rgb(241, 240, 240);
+      }
+      p a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+      }
+      #input_checkbox input{
+        zoom:1.5;
+      }
+      h1 {
+        font-weight: bold;
+      }
+      .input {
+        width: 90%;
+        padding: 13px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: solid rgb(235, 235, 235);
+      }
+      #input_checkbox{
+        display: flex;
+        cursor: pointer;
+      }
+      button {
+        margin-top: 35px;
+        margin-bottom: 30px;
+        width: 100%;
+        background-color: rgb(19,19,19);
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover{
+        color: black;
+        background-color: green;
+      }
+      #icon {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+      }
+      #icon a{
+        color: #000;
+      }
+      .fa-google {
+        font-size: 20px;
+        padding: 15px;
+        box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.2);
+      }
+      .fa-facebook {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      #lines{
+        position: relative;
+            max-width: 500px;
+            margin: 30px auto;
+            text-align: center;
+            font-size: 15px;
+      }
+      #lines:before{
+        content: " ";
+            display: block;
+            height: 0.5px;
+            width: 130px;
+            position: absolute;
+            top: 50%;
+            background: black
+      }
+      #lines:after{
+        content: " ";
+            height: 0.5px;
+            width: 30%;
+            background: black;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="./table.html">
+      <div id="container">
+        <p>Already have an account?<a href="index.html">Sign Up</a></p>
+        <h1>Sign In</h1>
+        <label for="email">Email:</label>
+        <br />
+        <input
+          id="email"
+          type="email"
+          placeholder="Sadeqsaadi2@Gmail.Com"
+          class="input"
+          required
+        />
+        <br />
+        <label for="password">Password</label>
+        <br />
+        <input
+          id="password"
+          type="password"
+          placeholder="XAxls566@"
+          class="input"
+          required
+        />
+        <br />
+        <div id="input_checkbox">
+          <input type="checkbox" required />
+          <p>
+            I've Read And Agee With <strong>The Terms Of Service</strong> And
+            Our <strong>Privacy Policy</strong>
+          </p>
+        </div>
+        <button type="submit">Sign In</button>
+
+        <h2 id="lines"><span>Or Sign Up With</span></h2>
+
+        <div id="icon">
+          <a
+            href="http://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=ASSHykpSYchEuMh2HmZILgrDQHrSGc-mitCsGPImlDrk4MCO9YA8EZf4_10-gikIBAoOA_ixPcQecQ&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1895705168%3A1740566987416858&ddm=1"
+            ><i class="fa-brands fa-google"></i
+          ></a>
+          <a href="https://www.facebook.com/login.php/"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        </div>
+    </form>
+  </body>
+</html>
