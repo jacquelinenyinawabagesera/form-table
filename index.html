@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="icon" href="images/signup.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      body {
+        width: 100%;
+        background-color: rgb(247, 255, 238);
+        margin-top: 50px;
+      }
+      #container {
+        width: 520px;
+        height: 700px;
+        margin: auto;
+        background-color: white;
+        padding: 30px;
+        box-shadow: 5px 5px 10px 10px rgb(241, 240, 240);
+      }
+      p a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+      }
+      h1 {
+        font-weight: bold;
+      }
+      .input {
+        width: 90%;
+        padding: 13px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: solid rgb(235, 235, 235);
+      }
+      #input_checkbox {
+        display: flex;
+        cursor: pointer;
+      }
+      #input_checkbox input {
+        zoom: 1.5;
+      }
+      button {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        width: 100%;
+        background-color: rgb(19, 19, 19);
+        color: white;
+        padding: 10px;
+        border: none;
+
+        cursor: pointer;
+      }
+      button:hover {
+        color: black;
+        background-color: green;
+      }
+      #icon {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 30px;
+      }
+      #icon a{
+       color: black;
+      }
+      .fa-google {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 15px;
+        box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.2);
+      }
+      .fa-facebook {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      #lines{
+        position: relative;
+            max-width: 500px;
+            margin: 30px auto;
+            text-align: center;
+            font-size: 15px;
+      }
+      #lines:before{
+        content: " ";
+            display: block;
+            height: 0.5px;
+            width: 130px;
+            position: absolute;
+            top: 50%;
+            background: black
+      }
+      #lines:after{
+        content: " ";
+            height: 0.5px;
+            width: 30%;
+            background: black;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="./login.html">
+      <div id="container">
+        <p>Already have an account?<a href="./login.html">Sign In</a></p>
+        <h1>Sign Up</h1>
+        <label for="name">Name:</label>
+        <br />
+        <input
+          id="name"
+          type="text"
+          placeholder="Sadegh"
+          class="input"
+          required
+        />
+        <br />
+        <label for="email">Email:</label>
+        <br />
+        <div>
+          <input
+            id="email"
+            type="email"
+            placeholder="Sadeqsaadi2@Gmail.Com"
+            class="input"
+            required
+          />
+        </div>
+        <br />
+        <label for="password">Password</label>
+        <br />
+        <input
+          type="password"
+          placeholder="XAxls566@"
+          class="input"
+          required
+          id="password"
+        />
+        <br />
+        <div id="input_checkbox">
+          <input type="checkbox" required />
+          <p>
+            I've Read And Agee With <strong>The Terms Of Service</strong> And
+            Our <strong>Privacy Policy</strong>
+          </p>
+        </div>
+        <button type="submit">Sign Up</button>
+
+        <h2 id="lines">Or Sign Up With</h2>
+
+        <div id="icon">
+          <a
+            href="http://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=ASSHykpSYchEuMh2HmZILgrDQHrSGc-mitCsGPImlDrk4MCO9YA8EZf4_10-gikIBAoOA_ixPcQecQ&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1895705168%3A1740566987416858&ddm=1"
+            ><i class="fa-brands fa-google"></i
+          ></a>
+          <a href="https://www.facebook.com/login.php/"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
